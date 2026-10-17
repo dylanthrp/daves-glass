@@ -1,63 +1,53 @@
-# Dave's Glass — Website
+# Dave’s Glass — website draft
 
-**Live preview:** https://dylanthrp.github.io/daves-glass/
-**Local source:** `C:\Users\dylan\Documents\daves-glass\`
+**GitHub Pages review preview:** https://dylanthrp.github.io/daves-glass/
 
-## What this is
+The checked-in files are the review draft. Verify the Pages deployment after each push; a local test pass alone does not establish that it is live.
 
-A custom static website for **Dave's Glass LLC**, a full-service glass shop in **Caro, Michigan** (1900 W Caro Rd). Family-run since 1978, serving Tuscola, Huron, Sanilac, and Lapeer counties. Commercial, residential, auto glass, and custom frameless shower enclosures.
+Plain HTML, CSS and JavaScript; no runtime dependencies or build step. Navy, cream and gold branding and the existing logo are retained. This real-client draft remains `noindex,nofollow` pending owner review and an authorized launch.
 
-The site is a single-page static HTML/CSS/JS build hosted on GitHub Pages. The intent is a real client deliverable that can be pointed at the eventual `davesglassllc.com` domain.
+## Content and photos
 
-## What's in the build
+- Compact Caro/Michigan hero, established-1978 / Greater Thumb strip, four services, six featured project photos, expanded project gallery, short About, six other services, contact/address/directions.
+- All **29 supplied photographs** are included. The 30th supplied file is a bug-report screenshot and is excluded.
+- `assets/photos/manifest.json` records exact original filenames, descriptive output names, captions and dimensions. Each has a full-scene WebP (maximum 1600px) and thumbnail (maximum 600px); Pillow never upscales or crops the files. CSS crops thumbnail presentation only; full scenes remain available through image links/lightbox.
+- Photos 2–22 form the project gallery; the building/van photo appears in About. Labeled service illustrations 23–29 have a separate disclosure/gallery rather than being presented as completed projects. Six are also compact other-service thumbnails.
+- Existing `img-0268.jpg` is used **only for Auto**. Residential and Seal Failure use the supplied fogged-window image. The old `img-3942.jpg` is no longer referenced. Unused original legacy assets remain on disk.
+- User-supplied business details: established 1978, Greater Thumb, 1900 W Caro Rd, Caro MI 48723, (989) 673-3828, office@davesglassllc.com, weekdays 8 AM–5 PM. Saturday and Sunday: **call to confirm**. No generational narrative, job counts, insurance/licensing claims or turnaround promises.
 
-- **Topbar** with phone, hours, and service area
-- **Sticky header** with logo + quick-CTA buttons (Call / Email / Quote)
-- **Hero** with company tagline, trust points, and a 45+/3 gens/1,000s stats badge
-- **Services** — 4 main categories: Commercial, Residential, Shower Enclosures, Auto Glass
-- **Shower gallery** — featured frameless glass shower photo
-- **Other services** — 7 secondary services: Mirrors, Commercial Door Repair, Table Tops, Seal Failure, Screens, Repairs, Auto Glass
-- **Local & family-owned** section with 3-generation framing + trust callout
-- **Contact** with phone, email, and a working quote form (opens user's mail app, sends to `office@davesglassllc.com`)
-- **Footer** with address, hours, service area, and copyright
+## Email draft, not online submission
 
-## What is real vs placeholder
+**Open email draft** validates fields and prepares a `mailto:` message. Nothing is submitted to a backend, and nothing is sent until the visitor sends it from their email app. Fields remain in the page. The body uses a neutral Dave’s Glass website attribution, not an unverified website domain.
 
-**Real (from his current site and public information):**
-- Shop name, address, phone, email
-- Hours: Mon–Fri 8:00 AM – 5:00 PM
-- Service area: Greater Thumb, Tuscola/Huron/Sanilac/Lapeer counties
-- The 4 photos supplied by Dylan
-- The Dave's Glass logo (isometric glass-block mark)
-- The "Est. 1978" / "45+ years" framing from the existing site
-- "3 generations of the family" — to be confirmed with Dave before going public
+**Copy message instead** works with webmail; if clipboard access is unavailable, the full selectable message and recipient remain visible. Visitors may attach photos in their email app. Without JavaScript, native mailto form behavior and direct contact links remain available, with an explanatory fallback. Closing/reloading the page does not persist entered information.
 
-**Placeholder (awaiting real photos):**
-- Main service card images for Commercial and Auto Glass
-- 5 of the 7 Other Services cards
-- Additional shower enclosure photos in the gallery
-- Each placeholder is clearly labeled with the category name and a small SVG icon so the missing photo is obvious
+Gallery anchors open image files without JavaScript. With JavaScript, the native modal dialog supports keyboard opening, Escape, Close, focus containment and focus return. Native details elements expand the additional images.
 
-**Drop-in replacement:** add a JPG to `assets/photos/` and tell me which category it belongs to, and the placeholder is swapped for a real photo.
-
-## Running locally
-
-No build step. Static files only.
+## Local preview and regression
 
 ```bash
 cd "C:/Users/dylan/Documents/daves-glass"
-python -m http.server 4177
-# open http://127.0.0.1:4177/
+python qa/serve.py --port 4189
+# http://127.0.0.1:4189/
 ```
 
-## Audit status
+Use this helper instead of stock `python -m http.server` on this Windows installation: its MIME database lacks WebP, which otherwise downloads native gallery links instead of displaying them.
 
-Built and tested at 4 widths (320/390/768/1440) with **40/40 audit checks passing** as of the most recent commit. Verification covers: 0 JS errors, no horizontal overflow, single-row header at every width, all 4 service categories present, all 7 other-services named correctly, both logos loaded (header + footer), year rendered, no demo banner (this is a real client build, not a portfolio concept).
+In a separate terminal:
 
-## What still needs review from Dave
+```bash
+node --check assets/site.js
+node qa/audit.cjs
+# Optional remote/subpath target:
+BASE_URL=https://example.com/daves-glass/ node qa/audit.cjs
+```
 
-1. The "3 generations of the family" claim in the hero stat — confirm with him.
-2. The "by appointment" vs "Closed" weekend framing — confirm.
-3. Replace placeholder photos with real job photos when available.
-4. Switch from `noindex,nofollow` to indexable when pointed at the real domain.
-5. 301-redirect the old `davesglass.biz` URL to the new domain once it's live.
+The audit defaults to the installed Playwright at `C:/Users/dylan/Downloads/study-spot/node_modules/playwright`. Override with `PLAYWRIGHT_PATH` (package/module path) on another machine. Screenshots default to ignored `tests/audit-*.png`; override `SCREENSHOT_DIR` for a separate run.
+
+Latest local run: **99 checks passed, exit 0**. Widths 320/390/768/1440; header non-overlap, overflow, stacked mobile contact, phone nowrap, content/navigation, correct images, all 29 originals reachable, lazy images loaded, gold button normal/hover contrast ≥4.5, lightbox keyboard/Escape/focus, form payload and validation, clipboard/manual fallback, no-JS gallery and no JavaScript errors. The test intercepts only the external email launcher; **no inquiry is sent**. These focused regressions are not a full accessibility certification.
+
+Regression-first sequence: content/layout regression failed on the old hero, then passed; keyboard gallery regression failed before lightbox implementation, then passed; copy/email regression failed before draft implementation, then passed. The expanded no-JS test exposed the local server’s missing WebP MIME type, fixed by `qa/serve.py`.
+
+Optional maintenance utilities (Pillow required): `python qa/prepare-photos.py` regenerates image derivatives from the original local composer image folder; `python qa/build-page.py` regenerates static `index.html` from its template and the manifest. If editing page copy, update that template as well. Neither is needed to serve the checked-in site.
+
+Owner review remains the user’s responsibility. Keep `noindex,nofollow` until authorized for the real launch. GitHub Pages is the review preview, not a real-domain launch. No DNS changes are part of this refresh.
