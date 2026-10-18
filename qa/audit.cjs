@@ -15,6 +15,7 @@ function check(value,message){assert.ok(value,message); checks++; console.log('P
  check(!/three generations|3 generations|1,000s|licensed|insured|same.week|same.day|subcontract|single morning|one visit|insurance|family.owned|family.run|coming soon/i.test(text),'no unsupported claims or placeholders');
  check(await page.locator('meta[name=robots]').getAttribute('content')==='noindex,nofollow','draft remains noindex');
  check(await page.locator('#services article').count()===4,'four concise services');
+ check(await page.locator('#service-commercial img').getAttribute('src')===await page.locator('.hero-photo img').getAttribute('src'),'commercial card uses the banner photo');
  check(await page.locator('#extras article').count()===6,'six other services');
  check((await page.locator('#service-auto img').getAttribute('src')).endsWith('img-0268.jpg'),'clean windshield photo belongs to auto');
  check((await page.locator('#service-residential img').getAttribute('src')).includes('seal-failure'),'residential uses actual fogged window');
