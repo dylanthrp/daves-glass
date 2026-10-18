@@ -358,6 +358,8 @@ label {
   font-size:13px;
   margin-bottom:14px}
 input,textarea {
+  /* Avoid iOS focus auto-zoom without restricting user pinch zoom. */
+  font-size:16px;
   display:block;
   width:100%;
   background:#fffefa;
@@ -384,7 +386,7 @@ textarea {
 .draft-tools p {
   margin-bottom:14px}
 .draft-tools textarea {
-  font-size:12px;
+  font-size:16px;
   font-weight:400}
 .footer-inner {
   padding-block:28px;
