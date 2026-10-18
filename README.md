@@ -15,6 +15,10 @@ Plain HTML, CSS and JavaScript; no runtime dependencies or build step. Navy, cre
 - Existing `img-0268.jpg` is used **only for Auto**. Residential and Seal Failure use the supplied fogged-window image. The old `img-3942.jpg` is no longer referenced. Unused original legacy assets remain on disk.
 - User-supplied business details: established 1978, Greater Thumb, 1900 W Caro Rd, Caro MI 48723, (989) 673-3828, office@davesglassllc.com, weekdays 8 AM–5 PM. Saturday and Sunday: **call to confirm**. No generational narrative, job counts, insurance/licensing claims or turnaround promises.
 
+## Full-width photo hero
+
+The hero uses the user-supplied enhanced Country View entrance image (`assets/photos/country-view-entrance-hero.webp`) across the entire banner. Existing text and buttons sit on the left above a navy readability gradient. Desktop scrolling subtly shifts the image behind the clipped hero; the next section covers it naturally. Mobile/tablet widths and reduced-motion preferences use a static presentation, and the photograph and text remain available without JavaScript. The original project-gallery photos are unchanged.
+
 ## Email draft, not online submission
 
 **Open email draft** validates fields and prepares a `mailto:` message. Nothing is submitted to a backend, and nothing is sent until the visitor sends it from their email app. Fields remain in the page. The body uses a neutral Dave’s Glass website attribution, not an unverified website domain.
@@ -38,6 +42,7 @@ In a separate terminal:
 ```bash
 node --check assets/site.js
 node qa/audit.cjs
+node qa/hero.cjs
 # Optional remote/subpath target:
 BASE_URL=https://example.com/daves-glass/ node qa/audit.cjs
 ```

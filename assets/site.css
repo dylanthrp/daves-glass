@@ -125,14 +125,27 @@ nav a {
 .outline:hover {
   background:#efe4d0}
 .hero {
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
   background:var(--navy);
   color:var(--cream)}
+.hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(15,38,64,.96) 0%,rgba(15,38,64,.87) 32%,rgba(15,38,64,.48) 60%,rgba(15,38,64,.14) 100%)}
 .hero-inner {
-  display:grid;
-  grid-template-columns:1.05fr 1fr;
-  gap:50px;
+  position:relative;
+  z-index:2;
+  display:flex;
   align-items:center;
-  padding-block:42px}
+  min-height:450px;
+  padding-block:52px}
+.hero-copy {
+  width:min(100%,580px)}
 .eyebrow {
   font-size:11px;
   letter-spacing:.15em;
@@ -151,16 +164,42 @@ nav a {
   margin:12px;
   font-size:14px}
 .hero-photo {
-  position:relative}
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none}
 .hero-photo img {
   width:100%;
-  height:340px;
+  height:100%;
   object-fit:cover;
-  border-radius:4px}
-.hero-photo figcaption {
+  object-position:50% 53%}
+.hero-caption {
+  position:absolute;
+  z-index:2;
+  right:24px;
+  bottom:14px;
+  margin:0;
   font-size:11px;
-  margin-top:8px;
-  color:#e4e9ee}
+  color:#e4e9ee;
+  padding:4px 8px;
+  width:fit-content;
+  max-width:calc(100% - 32px);
+  border-radius:3px;
+  background:rgba(15,38,64,.88);
+  text-shadow:0 1px 4px var(--navy)}
+@media(min-width:769px) and (prefers-reduced-motion:no-preference) {
+  .hero-photo {
+    inset:-120px 0;
+    transform:translate3d(0,var(--hero-shift,0px),0);
+    will-change:transform}
+}
+@media(max-width:768px) {
+  .hero::after {
+    background:linear-gradient(90deg,rgba(15,38,64,.92),rgba(15,38,64,.58))}
+  .hero-caption {
+    left:24px;
+    right:16px}
+}
 .heritage {
   background:#eee4d2;
   color:var(--navy);
@@ -421,11 +460,10 @@ nav a {
   font-size:13px;
   padding:5px 0}
 .hero-inner {
-  grid-template-columns:1fr;
-  gap:25px;
-  padding-block:30px}
-.hero-photo img {
-  height:210px}
+  min-height:420px;
+  padding-block:38px 62px}
+.hero-caption {
+  left:16px}
 .hero .lede {
   font-size:16px;
   margin:16px 0 20px}
@@ -512,8 +550,6 @@ nav a {
   font-size:19px}
 .header-actions .btn {
   padding:9px 8px}
-.hero-photo img {
-  height:185px}
 .contact-email {
   font-size:17px}
 .gallery-grid img {

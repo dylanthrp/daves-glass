@@ -1,4 +1,35 @@
 'use strict';
+// Progressive enhancement: the photo stays full-bleed without JavaScript.
+// Overscan in CSS exceeds the clamped travel so the hero never exposes a gap.
+(() => {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
+  const motion = matchMedia('(min-width:769px) and (prefers-reduced-motion:no-preference)');
+  let frame = 0;
+  function render() {
+    frame = 0;
+    const top = hero.getBoundingClientRect().top;
+    const shift = Math.max(-100, Math.min(100, -top * .2));
+    hero.style.setProperty('--hero-shift', `${shift}px`);
+  }
+  function schedule() {
+    if (!frame) frame = requestAnimationFrame(render);
+  }
+  function configure() {
+    window.removeEventListener('scroll', schedule);
+    window.removeEventListener('resize', schedule);
+    cancelAnimationFrame(frame);
+    frame = 0;
+    hero.style.removeProperty('--hero-shift');
+    if (motion.matches) {
+      window.addEventListener('scroll', schedule, { passive: true });
+      window.addEventListener('resize', schedule);
+      schedule();
+    }
+  }
+  motion.addEventListener('change', configure);
+  configure();
+})();
 // Pure payload builder; the separate launcher makes verification safe (no inquiry sent).
 window.buildQuoteDraft = function (form) {
   const data = new FormData(form);

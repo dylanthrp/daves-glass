@@ -28,11 +28,11 @@ page='''<!doctype html>
 <div class="header-actions"><a class="btn outline" href="tel:+19896733828">Call</a><a class="btn primary" href="#contact">Get a quote</a></div>
 </div></header>
 <main id="main">
-<section class="hero"><div class="wrap hero-inner"><div><p class="eyebrow">Dave’s Glass · Caro, MI</p>
+<section class="hero"><figure class="hero-photo">HERO</figure><div class="wrap hero-inner"><div class="hero-copy"><p class="eyebrow">Dave’s Glass · Caro, MI</p>
 <h1>Glass repair &amp; installation in Caro, Michigan</h1>
 <p class="lede">For your home, your business and your vehicle. Tell us what you’re working on.</p>
 <a class="btn primary" href="#contact">Get a quote</a> <a class="text-link" href="#work">Explore our work →</a>
-</div><figure class="hero-photo">HERO<figcaption>Commercial glass · Country View storefront</figcaption></figure></div></section>
+</div></div><p class="hero-caption">Commercial glass · Country View storefront</p></section>
 <div class="heritage"><div class="wrap">Established 1978 <span aria-hidden="true">/</span> Serving Michigan’s Greater Thumb</div></div>
 <section id="services" class="section wrap"><p class="eyebrow">What we do</p><h2>One glass shop. Four ways to help.</h2>
 <p class="section-intro">From a damaged pane to a new glass enclosure, start with a call to our Caro shop.</p>
@@ -62,5 +62,5 @@ page='''<!doctype html>
 <footer><div class="wrap footer-inner"><a class="brand" href="#top"><img src="assets/logo.png" width="56" height="44" alt=""><span>Dave’s <strong>Glass</strong></span></a><p>Established 1978 · Greater Thumb, Michigan</p><a href="#contact">Contact &amp; hours ↑</a></div></footer>
 <dialog id="lightbox" aria-label="Enlarged photo"><button class="close-lightbox" type="button" aria-label="Close enlarged photo">Close ×</button><figure><img alt=""><figcaption id="lightbox-caption"></figcaption></figure></dialog>
 </body></html>'''
-page=page.replace('HERO',image(4,False).replace('loading="lazy"','fetchpriority="high"')).replace('SERVICES',service_html).replace('FEATURED',''.join(map(gallery,featured))).replace('MORE',''.join(gallery(i) for i in range(1,22) if i not in featured)).replace('SHOP',image(0)).replace('EXTRAS',extras).replace('ILLUSTRATIONS',''.join(gallery(i) for i in range(22,29)))
+page=page.replace('HERO','<img src="assets/photos/country-view-entrance-hero.webp" alt="Country View storefront" width="1098" height="1432" fetchpriority="high">').replace('SERVICES',service_html).replace('FEATURED',''.join(map(gallery,featured))).replace('MORE',''.join(gallery(i) for i in range(1,22) if i not in featured)).replace('SHOP',image(0)).replace('EXTRAS',extras).replace('ILLUSTRATIONS',''.join(gallery(i) for i in range(22,29)))
 (root/'index.html').write_text(page,encoding='utf-8')
