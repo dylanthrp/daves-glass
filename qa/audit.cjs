@@ -18,7 +18,7 @@ function check(value,message){assert.ok(value,message); checks++; console.log('P
  check(await page.locator('#service-commercial img').getAttribute('src')===await page.locator('.hero-photo img').getAttribute('src'),'commercial card uses the banner photo');
  check(await page.locator('#extras article').count()===6,'six other services');
  check((await page.locator('#service-auto img').getAttribute('src')).endsWith('img-0268.jpg'),'clean windshield photo belongs to auto');
- check((await page.locator('#service-residential img').getAttribute('src')).includes('seal-failure'),'residential uses actual fogged window');
+ check((await page.locator('#service-residential img').getAttribute('src'))==='assets/photos/residential-window-condensation.webp','residential uses supplied condensation photo');
  check(await page.locator('.gallery-grid').first().locator('a').count()===6,'six initial project images');
  for(const label of ['Services','Our Work','About','Contact']) check(await page.getByRole('navigation',{name:'Main navigation'}).getByRole('link',{name:label,exact:true}).count()===1,'navigation '+label);
  for(const width of [320,390,768,1440]){

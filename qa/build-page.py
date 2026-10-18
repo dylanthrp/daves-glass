@@ -11,7 +11,8 @@ featured=[4,12,6,14,11,20]
 services=[('commercial','Commercial glass','Storefronts, entrance doors and glass for business spaces.',4),('residential','Residential glass','Window glass replacement and repairs, including fogged panes.',25),('shower','Shower enclosures','Glass enclosures and doors to suit your bathroom.',14),('auto','Auto glass','Windshield replacement and auto glass repairs.',None)]
 auto_image='<img src="assets/photos/img-0268.jpg" alt="Auto windshield installation" loading="lazy">'
 commercial_image='<img src="assets/photos/country-view-entrance-hero.webp" alt="Country View storefront" width="1098" height="1432" loading="lazy">'
-service_html=''.join(f'<article id="service-{key}">{commercial_image if key == "commercial" else image(i) if i is not None else auto_image}<div><h3>{title}</h3><p>{desc}</p></div></article>' for key,title,desc,i in services)
+residential_image='<img src="assets/photos/residential-window-condensation.webp" alt="Condensation on a white-framed residential window" width="1543" height="1019" loading="lazy">'
+service_html=''.join(f'<article id="service-{key}">{commercial_image if key == "commercial" else residential_image if key == "residential" else image(i) if i is not None else auto_image}<div><h3>{title}</h3><p>{desc}</p></div></article>' for key,title,desc,i in services)
 extras=''.join(f'<article>{image(i)}<h3>{title}</h3></article>' for i,title in zip(range(22,28),['Mirrors','Commercial door repair','Glass table tops','Seal failure','Screens','Window repairs']))
 page='''<!doctype html>
 <html lang="en"><head>
