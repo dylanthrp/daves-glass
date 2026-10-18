@@ -4,492 +4,521 @@
     "name": "shop-and-van",
     "caption": "Dave\u2019s Glass service van at a commercial building",
     "original": [
-      512,
-      380
+      1456,
+      1080
     ],
     "full": [
-      512,
-      380
+      1456,
+      1080
     ],
     "thumbnail": [
-      512,
-      380
-    ]
+      600,
+      445
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shop-and-van.png"
   },
   {
     "source": "composer_2026-10-17_23-18-38-829_42ba43.png",
     "name": "roof-skylight",
     "caption": "Roof skylight",
     "original": [
-      509,
-      384
+      1444,
+      1089
     ],
     "full": [
-      509,
-      384
+      1444,
+      1089
     ],
     "thumbnail": [
-      509,
-      384
-    ]
+      600,
+      452
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/roof-skylight.png"
   },
   {
     "source": "composer_2026-10-17_23-18-47-201_561c82.png",
     "name": "service-counter-window",
     "caption": "Sliding glass service-counter window",
     "original": [
-      819,
-      613
+      1450,
+      1085
     ],
     "full": [
-      819,
-      613
+      1450,
+      1085
     ],
     "thumbnail": [
       600,
       449
-    ]
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/service-counter-window.png"
   },
   {
     "source": "composer_2026-10-17_23-19-00-765_4afdd0.png",
     "name": "office-sliding-door",
     "caption": "Sliding glass office door",
     "original": [
-      383,
-      512
+      1085,
+      1450
     ],
     "full": [
-      383,
-      512
+      1085,
+      1450
     ],
     "thumbnail": [
-      383,
-      512
-    ]
+      449,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/office-sliding-door.png"
   },
   {
     "source": "composer_2026-10-17_23-19-08-625_fe3955.png",
     "name": "country-view-storefront",
     "caption": "Country View storefront",
     "original": [
-      387,
-      506
+      1097,
+      1434
     ],
     "full": [
-      387,
-      506
+      1097,
+      1434
     ],
     "thumbnail": [
-      387,
-      506
-    ]
+      459,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/country-view-storefront.png"
   },
   {
     "source": "composer_2026-10-17_23-19-19-372_3b0f4c.png",
     "name": "commercial-window-band",
     "caption": "Horizontal commercial windows",
     "original": [
-      510,
-      384
+      1445,
+      1088
     ],
     "full": [
-      510,
-      384
+      1445,
+      1088
     ],
     "thumbnail": [
-      510,
-      384
-    ]
+      600,
+      452
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/commercial-window-band.png"
   },
   {
     "source": "composer_2026-10-17_23-19-27-326_a0e5fb.png",
     "name": "arched-brick-entry",
     "caption": "Arched storefront entry in brick",
     "original": [
-      383,
-      512
+      1085,
+      1450
     ],
     "full": [
-      383,
-      512
+      1085,
+      1450
     ],
     "thumbnail": [
-      383,
-      512
-    ]
+      449,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/arched-brick-entry.png"
   },
   {
     "source": "composer_2026-10-17_23-19-45-072_3ab8d0.png",
     "name": "stained-glass-window",
     "caption": "Stained glass window",
     "original": [
-      380,
-      507
+      1086,
+      1449
     ],
     "full": [
-      380,
-      507
+      1086,
+      1449
     ],
     "thumbnail": [
-      380,
-      507
-    ]
+      450,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/stained-glass-window.png"
   },
   {
     "source": "composer_2026-10-17_23-19-52-962_89a97f.png",
     "name": "industrial-facade",
     "caption": "Industrial glass facade",
     "original": [
-      510,
-      383
+      1447,
+      1087
     ],
     "full": [
-      510,
-      383
+      1447,
+      1087
     ],
     "thumbnail": [
-      510,
-      383
-    ]
+      600,
+      451
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/industrial-facade.png"
   },
   {
     "source": "composer_2026-10-17_23-20-03-626_527589.png",
     "name": "sawtooth-glass-facade",
     "caption": "Glass facade beneath a sawtooth roof",
     "original": [
-      511,
-      384
+      1447,
+      1087
     ],
     "full": [
-      511,
-      384
+      1447,
+      1087
     ],
     "thumbnail": [
-      511,
-      384
-    ]
+      600,
+      451
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/sawtooth-glass-facade.png"
   },
   {
     "source": "composer_2026-10-17_23-20-11-019_147634.png",
     "name": "reflective-entry",
     "caption": "Commercial entry with reflective glass",
     "original": [
-      512,
-      385
+      1446,
+      1087
     ],
     "full": [
-      512,
-      385
+      1446,
+      1087
     ],
     "thumbnail": [
-      512,
-      385
-    ]
+      600,
+      451
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/reflective-entry.png"
   },
   {
     "source": "composer_2026-10-17_23-20-25-563_a2f021.png",
     "name": "corner-curtain-wall",
     "caption": "Reflective corner curtain wall",
     "original": [
-      511,
-      380
+      1454,
+      1082
     ],
     "full": [
-      511,
-      380
+      1454,
+      1082
     ],
     "thumbnail": [
-      511,
-      380
-    ]
+      600,
+      446
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/corner-curtain-wall.png"
   },
   {
     "source": "composer_2026-10-17_23-20-40-227_627656.png",
     "name": "shower-dark-handle",
     "caption": "Glass shower with dark handle and gray-brown tile",
     "original": [
-      383,
-      514
+      1083,
+      1453
     ],
     "full": [
-      383,
-      514
+      1083,
+      1453
     ],
     "thumbnail": [
-      383,
-      514
-    ]
+      447,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-dark-handle.png"
   },
   {
     "source": "composer_2026-10-17_23-20-55-440_a9fd5c.png",
     "name": "shower-sloped-ceiling",
     "caption": "Frameless shower beneath a sloped ceiling",
     "original": [
-      381,
-      509
+      1085,
+      1450
     ],
     "full": [
-      381,
-      509
+      1085,
+      1450
     ],
     "thumbnail": [
-      381,
-      509
-    ]
+      449,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-sloped-ceiling.png"
   },
   {
     "source": "composer_2026-10-17_23-21-03-546_5b933d.png",
     "name": "shower-white-subway",
     "caption": "White subway tile shower with black handle",
     "original": [
-      385,
-      511
+      1089,
+      1445
     ],
     "full": [
-      385,
-      511
+      1089,
+      1445
     ],
     "thumbnail": [
-      385,
-      511
-    ]
+      452,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-white-subway.png"
   },
   {
     "source": "composer_2026-10-17_23-21-12-764_5becee.png",
     "name": "shower-wraparound",
     "caption": "Wraparound shower glass above a half wall",
     "original": [
-      381,
-      508
+      1086,
+      1448
     ],
     "full": [
-      381,
-      508
+      1086,
+      1448
     ],
     "thumbnail": [
-      381,
-      508
-    ]
+      450,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-wraparound.png"
   },
   {
     "source": "composer_2026-10-17_23-21-18-200_26c925.png",
     "name": "shower-black-frame",
     "caption": "Black-framed corner shower",
     "original": [
-      383,
-      510
+      1087,
+      1447
     ],
     "full": [
-      383,
-      510
+      1087,
+      1447
     ],
     "thumbnail": [
-      383,
-      510
-    ]
+      451,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-black-frame.png"
   },
   {
     "source": "composer_2026-10-17_23-21-24-090_43afe7.png",
     "name": "shower-gray-subway",
     "caption": "Shower with gray subway tile",
     "original": [
-      381,
-      508
+      1086,
+      1448
     ],
     "full": [
-      381,
-      508
+      1086,
+      1448
     ],
     "thumbnail": [
-      381,
-      508
-    ]
+      450,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-gray-subway.png"
   },
   {
     "source": "composer_2026-10-17_23-21-31-477_02c41d.png",
     "name": "shower-chrome-handle",
     "caption": "Gray tiled shower with chrome handle",
     "original": [
-      381,
-      509
+      1085,
+      1450
     ],
     "full": [
-      381,
-      509
+      1085,
+      1450
     ],
     "thumbnail": [
-      381,
-      509
-    ]
+      449,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-chrome-handle.png"
   },
   {
     "source": "composer_2026-10-17_23-21-41-207_85c07e.png",
     "name": "shower-marble-corner",
     "caption": "Marble-look corner shower",
     "original": [
-      380,
-      510
+      1083,
+      1453
     ],
     "full": [
-      380,
-      510
+      1083,
+      1453
     ],
     "thumbnail": [
-      380,
-      510
-    ]
+      447,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-marble-corner.png"
   },
   {
     "source": "composer_2026-10-17_23-21-53-324_883e63.png",
     "name": "shower-black-slider",
     "caption": "Black sliding shower door",
     "original": [
-      379,
-      509
+      1083,
+      1453
     ],
     "full": [
-      379,
-      509
+      1083,
+      1453
     ],
     "thumbnail": [
-      379,
-      509
-    ]
+      447,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-black-slider.png"
   },
   {
     "source": "composer_2026-10-17_23-22-02-359_417b79.png",
     "name": "shower-teal-mosaic",
     "caption": "Shower with teal mosaic tile",
     "original": [
-      382,
-      508
+      1087,
+      1446
     ],
     "full": [
-      382,
-      508
+      1087,
+      1446
     ],
     "thumbnail": [
-      382,
-      508
-    ]
+      451,
+      600
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/shower-teal-mosaic.png"
   },
   {
     "source": "composer_2026-10-17_23-22-13-339_a82d70.png",
     "name": "mirrors",
     "caption": "Bathroom mirror \u2014 service illustration",
     "original": [
-      397,
-      394
+      1265,
+      1243
     ],
     "full": [
-      397,
-      394
+      1265,
+      1243
     ],
     "thumbnail": [
-      397,
-      394
-    ]
+      600,
+      590
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/mirrors.png"
   },
   {
     "source": "composer_2026-10-17_23-22-18-714_950e10.png",
     "name": "commercial-door-repair",
     "caption": "Commercial door repair \u2014 service illustration",
     "original": [
-      398,
-      303
+      1437,
+      1094
     ],
     "full": [
-      398,
-      303
+      1437,
+      1094
     ],
     "thumbnail": [
-      398,
-      303
-    ]
+      600,
+      457
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/commercial-door-repair.png"
   },
   {
     "source": "composer_2026-10-17_23-22-27-752_fbd129.png",
     "name": "table-tops",
     "caption": "Glass tabletop \u2014 service illustration",
     "original": [
-      1071,
-      800
+      1451,
+      1084
     ],
     "full": [
-      1071,
-      800
+      1451,
+      1084
     ],
     "thumbnail": [
       600,
       448
-    ]
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/table-tops.png"
   },
   {
     "source": "composer_2026-10-17_23-22-33-360_effbff.png",
     "name": "seal-failure",
     "caption": "Fogged residential window, seal failure \u2014 service illustration",
     "original": [
-      377,
-      249
+      1543,
+      1019
     ],
     "full": [
-      377,
-      249
+      1543,
+      1019
     ],
     "thumbnail": [
-      377,
-      249
-    ]
+      600,
+      396
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/seal-failure.png"
   },
   {
     "source": "composer_2026-10-17_23-22-41-088_a8e4c8.png",
     "name": "screens",
     "caption": "Screen rolls \u2014 service illustration",
     "original": [
-      374,
-      251
+      1531,
+      1027
     ],
     "full": [
-      374,
-      251
+      1531,
+      1027
     ],
     "thumbnail": [
-      374,
-      251
-    ]
+      600,
+      402
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/screens.png"
   },
   {
     "source": "composer_2026-10-17_23-22-51-016_58d4f6.png",
     "name": "window-repairs",
     "caption": "Broken window \u2014 repair service illustration",
     "original": [
-      360,
-      239
+      1539,
+      1022
     ],
     "full": [
-      360,
-      239
+      1539,
+      1022
     ],
     "thumbnail": [
-      360,
-      239
-    ]
+      600,
+      398
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/window-repairs.png"
   },
   {
     "source": "composer_2026-10-17_23-22-58-090_245909.png",
     "name": "auto-glass-illustration",
     "caption": "Technicians installing a windshield \u2014 service illustration",
     "original": [
-      383,
-      286
+      1451,
+      1084
     ],
     "full": [
-      383,
-      286
+      1451,
+      1084
     ],
     "thumbnail": [
-      383,
-      286
-    ]
+      600,
+      448
+    ],
+    "enhanced_source": "Daves-Glass-Enhanced-Photos.zip/auto-glass-illustration.png"
   }
 ]
